@@ -12,7 +12,7 @@ Open-source desktop PCB printer project. Includes hardware designs and schematic
 
 
 ## 📸 Overview
-![Alt text](Images\PCB printer image.PNG)
+![Alt text][Images\PCB printer image.PNG]
 
 PCB Printer Build 
 Printed PCB Result
