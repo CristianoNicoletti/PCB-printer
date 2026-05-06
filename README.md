@@ -3,6 +3,8 @@ Open-source desktop PCB printer project. Includes hardware designs and schematic
 
 
 ## Features
+
+# do
 - Core XY construction
 - easy assembly
 - subtractive PCB printing method
@@ -10,7 +12,7 @@ Open-source desktop PCB printer project. Includes hardware designs and schematic
 
 
 ## 📸 Overview
-# insert picture
+![Alt text](Images\PCB printer image.PNG)
 
 PCB Printer Build 
 Printed PCB Result
@@ -43,15 +45,6 @@ Printed PCB Result
 5. Machine engraves circuit onto copper board  
 
 ---
-
-## 🧩 Repository Structure
-
-# fix
-
-pcb-printer/ │── README.md │── hardware/ │   ├── CAD/ │   │   ├── pcb_printer.f3d │   │   ├── pcb_printer.step │   │   ├── parts/ │   │       ├── motor_mount.stl │   │       ├── frame_connector.stl │   ├── drawings/ │       ├── assembly.pdf │── software/ │   ├── arduino/ │   ├── gcode_examples/ │── images/ │── docs/
-
----
-
 ## 🛠️ Build Instructions
 
 ### Bill of Materials (BOM)
@@ -85,7 +78,7 @@ pcb-printer/ │── README.md │── hardware/ │   ├── CAD/ │   
 ---
 
 ## ⚠️ Challenges
-
+ # do
 ---
 
 ## 🚀 Future Improvements
