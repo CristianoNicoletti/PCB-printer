@@ -1,111 +1,107 @@
-# PCB-printer
-Open-source desktop PCB printer project. Includes hardware designs and schematics for rapid, affordable PCB prototyping at home or in a makerspace.
+# PCB Printer
 
+An open-source desktop PCB printer designed for rapid and affordable PCB prototyping at home, in workshops, or in makerspaces.  
+This project includes hardware designs, schematics, and supporting files for building a compact PCB fabrication machine.
+
+---
 
 ## Features
 
-# do
-- Core XY construction
-- easy assembly
-- subtractive PCB printing method
+- CoreXY motion system
+- Easy-to-assemble design
+- Subtractive PCB fabrication method
+- Low-power milling for PCB engraving
 
-
+---
 
 ## 📸 Overview
+
 ![PCB Printer Image](Images/PCB%20printer%20image.PNG)
-
-
 
 ---
 
 ## ⚙️ System Overview
 
 ### Hardware
-- Arduino Uno  
-- CNC Shield + A4988 Stepper Drivers  
-- 3x NEMA 17 Stepper Motors
-- Custom frame (3D printed + aluminum profiles)  
-- spindle motor 
-- 12V Power Supply  
+- Arduino Uno
+- CNC Shield with TMC2209 stepper drivers
+- 3 × NEMA 17 stepper motors
+- Custom frame made from 3D-printed parts and aluminum profiles
+- Spindle motor
+- 24V power supply
+- limit switches
+- rasberry pi (optional)
+- 
 
 ### Software
-- GRBL firmware (Arduino)  
-- G-code sender (Universal G-code Sender)  
-- PCB design tools (KiCad / Eagle)  
+- GRBL firmware for Arduino
+- G-code sender software (Universal G-code Sender)
+- PCB design software (KiCad / Eagle)
 
 ---
 
 ## 🔁 Workflow
 
-1. Design PCB in KiCad  
-2. Export Gerber files  
-3. Convert to G-code  
-4. Upload G-code to Arduino (GRBL)  
-5. Machine engraves circuit onto copper board  
+1. Design the PCB in KiCad
+2. Export the Gerber files
+3. Convert the Gerbers to G-code
+4. Send the G-code to the Arduino running GRBL
+5. Engrave the circuit onto a copper-clad board
 
 ---
+
 ## 🛠️ Build Instructions
 
 ### Bill of Materials (BOM)
-
-# do
-
-| Component            | Quantity |
-|---------------------|--------|
-| Arduino Uno         | 1      |
-| CNC Shield          | 1      |
-| Stepper Motor       | 2      |
-| A4988 Drivers       | 2      |
-| Power Supply (12V)  | 1      |
-
----
+See the BOM file included in the project.
 
 ### Assembly
-
-# do
-- Construct frame using 3D printed connectors and profiles  
-- Mount stepper motors on X and Y axes  
-- Wire Arduino, CNC shield, and drivers  
-
----
+- Build the frame using aluminum profiles and 3D-printed connectors
+- Mount the stepper motors on the X, Y, and Z axes
+- Assemble the CoreXY motion system
+- Install and route the belts
+- Tension the belts evenly
+- Wire the Arduino, CNC Shield, and stepper drivers
 
 ### Setup
-- Flash GRBL firmware to Arduino  
-- Connect to G-code sender  
-- Calibrate steps/mm for both axes  
+- Flash GRBL firmware to the Arduino
+- Connect the machine to a G-code sender
+- Calibrate the steps/mm for each axis
 
 ---
 
 ## ⚠️ Challenges
- # do
+
+- Finding reliable software for PCB toolpath generation and machine control
+- Operating the machine without a dedicated host computer
+- Reducing and absorbing vibrations during milling
+
 ---
 
 ## 🚀 Future Improvements
 
-- Add Z-axis for engraving capability  
-- Replace pen with engraving spindle  
-- Improve precision using linear rails  
-- Implement limit switches and homing  
+- Add laser cutting or engraving tools
+- Upgrade to a more powerful spindle for acrylic milling
+- Improve accuracy for denser PCB layouts
 
 ---
 
-## 📁 Files
+## 📁 Included Files
 
-- .f3d → editable Fusion 360 design  
-- .step → universal CAD format  
-- .stl → 3D printable parts  
-- .pdf → schematics  
+- `.f3d` — Editable Fusion 360 design files
+- `.step` — Universal CAD files
+- `.stl` — 3D-printable parts
+- `.pdf` — Schematics and documentation
 
 ---
 
 ## 📜 License
 
-MIT License
+This project is licensed under the MIT License.
 
 ---
 
 ## 👤 Author
 
-Cristiano Nicoletti 
-
+**Cristiano Nicoletti**  
 Mechatronics Engineering Student
