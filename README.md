@@ -31,7 +31,6 @@ This project includes hardware designs, schematics, and supporting files for bui
 - 24V power supply
 - limit switches
 - rasberry pi (optional)
-- 
 
 ### Software
 - GRBL firmware for Arduino
